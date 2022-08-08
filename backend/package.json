@@ -10,6 +10,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@babel/core": "^7.18.10",
     "@strapi/admin": "4.3.2",
     "@strapi/plugin-content-manager": "4.3.2",
     "@strapi/plugin-content-type-builder": "4.3.2",
