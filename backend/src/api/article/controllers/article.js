@@ -1,16 +1,9 @@
-const { sanitizeEntity } = require('@strapi/utils');
+'use strict';
 
-module.exports = {
-  /**
-   * Retrieve a record.
-   *
-   * @return {Object}
-   */
+/**
+ *  article controller
+ */
 
-  async findOne(ctx) {
-    const { slug } = ctx.params;
+const { createCoreController } = require('@strapi/strapi').factories;
 
-    const entity = await strapi.services.article.findOne({ slug });
-    return sanitizeEntity(entity, { model: strapi.models.article });
-  },
-};
+module.exports = createCoreController('api::article.article');
